@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produtos | GTM Test Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="index.html" data-gtm-click="logo">GTM Test Lab</a>
+      <nav>
+        <a href="index.html" data-gtm-click="nav_home">Início</a>
+        <a href="produtos.html" data-gtm-click="nav_products">Produtos</a>
+        <a href="contato.html" data-gtm-click="nav_contact">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <span class="badge">Catálogo</span>
+        <h1>Produtos</h1>
+        <p>Use esta página para praticar visualização de produto, add_to_cart e checkout.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container product-grid">
+        <article class="card" id="camiseta">
+          <div class="product-image">👕</div>
+          <h2>Camiseta GTM</h2>
+          <p>Algodão premium para analistas que não vivem sem um dashboard.</p>
+          <strong>R$ 89,90</strong>
+          <div class="actions">
+            <button class="btn add-cart" data-product-id="001" data-product-name="Camiseta GTM" data-product-price="89.90">Adicionar ao carrinho</button>
+            <button class="btn secondary buy-now" data-product-id="001" data-product-name="Camiseta GTM" data-product-price="89.90">Comprar agora</button>
+          </div>
+        </article>
+
+        <article class="card" id="caneca">
+          <div class="product-image">☕</div>
+          <h2>Caneca Analytics</h2>
+          <p>Ideal para acompanhar uma madrugada de SQL.</p>
+          <strong>R$ 49,90</strong>
+          <div class="actions">
+            <button class="btn add-cart" data-product-id="002" data-product-name="Caneca Analytics" data-product-price="49.90">Adicionar ao carrinho</button>
+            <button class="btn secondary buy-now" data-product-id="002" data-product-name="Caneca Analytics" data-product-price="49.90">Comprar agora</button>
+          </div>
+        </article>
+
+        <article class="card" id="curso">
+          <div class="product-image">📊</div>
+          <h2>Curso de Analytics</h2>
+          <p>Curso fictício para praticar eventos e conversões.</p>
+          <strong>R$ 199,90</strong>
+          <div class="actions">
+            <button class="btn add-cart" data-product-id="003" data-product-name="Curso de Analytics" data-product-price="199.90">Adicionar ao carrinho</button>
+            <button class="btn secondary buy-now" data-product-id="003" data-product-name="Curso de Analytics" data-product-price="199.90">Comprar agora</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section light">
+      <div class="container centered">
+        <h2>Simular checkout</h2>
+        <p>O botão abaixo dispara um evento de início de checkout.</p>
+        <button class="btn" id="checkoutButton">Iniciar checkout</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>GTM Test Lab — projeto educacional.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

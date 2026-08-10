@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GTM Test Lab | Loja</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="index.html" data-gtm-click="logo">GTM Test Lab</a>
+      <nav>
+        <a href="index.html" data-gtm-click="nav_home">Início</a>
+        <a href="produtos.html" data-gtm-click="nav_products">Produtos</a>
+        <a href="contato.html" data-gtm-click="nav_contact">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <span class="badge">Projeto de aprendizado GTM + GA4</span>
+        <h1>Aprenda tracking criando um site de verdade.</h1>
+        <p>Uma loja fictícia criada para testar Google Tag Manager, GA4, dataLayer, eventos e conversões.</p>
+        <a class="btn" href="produtos.html" data-gtm-click="hero_products">Ver produtos</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Produtos em destaque</h2>
+        <div class="product-grid">
+          <article class="card">
+            <div class="product-image">👕</div>
+            <h3>Camiseta GTM</h3>
+            <p>Para quem vive de eventos e parâmetros.</p>
+            <strong>R$ 89,90</strong>
+            <div class="actions">
+              <a class="btn secondary" href="produtos.html#camiseta">Ver produto</a>
+              <button class="btn" data-product-id="001" data-product-name="Camiseta GTM" data-product-price="89.90">Adicionar</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="product-image">☕</div>
+            <h3>Caneca Analytics</h3>
+            <p>Combustível oficial para análise de dados.</p>
+            <strong>R$ 49,90</strong>
+            <div class="actions">
+              <a class="btn secondary" href="produtos.html#caneca">Ver produto</a>
+              <button class="btn" data-product-id="002" data-product-name="Caneca Analytics" data-product-price="49.90">Adicionar</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light">
+      <div class="container centered">
+        <h2>Quer testar um formulário?</h2>
+        <p>Use o contato para praticar form_start e form_submit.</p>
+        <a class="btn" href="contato.html" data-gtm-click="home_contact_cta">Falar conosco</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>GTM Test Lab — projeto educacional.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

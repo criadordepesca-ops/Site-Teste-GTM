@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato | GTM Test Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="index.html" data-gtm-click="logo">GTM Test Lab</a>
+      <nav>
+        <a href="index.html" data-gtm-click="nav_home">Início</a>
+        <a href="produtos.html" data-gtm-click="nav_products">Produtos</a>
+        <a href="contato.html" data-gtm-click="nav_contact">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <span class="badge">Tracking de formulário</span>
+        <h1>Entre em contato</h1>
+        <p>Esta página foi feita para praticar eventos de formulário.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container form-wrapper">
+        <form id="contactForm">
+          <label for="name">Nome</label>
+          <input id="name" name="name" type="text" required placeholder="Seu nome">
+
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" required placeholder="voce@email.com">
+
+          <label for="subject">Assunto</label>
+          <select id="subject" name="subject">
+            <option value="duvida">Dúvida</option>
+            <option value="produto">Produto</option>
+            <option value="analytics">Analytics</option>
+          </select>
+
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" rows="5" required placeholder="Escreva sua mensagem"></textarea>
+
+          <button class="btn" type="submit">Enviar mensagem</button>
+          <p id="formMessage" class="success hidden">Mensagem enviada! (Simulação)</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>GTM Test Lab — projeto educacional.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
